@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace AspNet_Core_Authorization
+namespace AspNet_Core_Api
 {
     public class Program
     {
@@ -19,8 +19,8 @@ namespace AspNet_Core_Authorization
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-             .UseKestrel()
-                .UseUrls("http://*:8082")
+                .UseKestrel()
+                .UseUrls("http://*:8083")
                 .UseStartup<Startup>()
                 .Build();
     }

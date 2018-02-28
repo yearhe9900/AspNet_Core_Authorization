@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
-      "IdentityModel/3.1.0": {
+      "IdentityModel/3.0.0": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "10.0.3"
@@ -14,25 +14,33 @@
           "lib/netstandard2.0/IdentityModel.dll": {}
         }
       },
-      "IdentityServer4/2.1.2": {
+      "IdentityModel.AspNetCore.OAuth2Introspection/3.1.0": {
         "type": "package",
         "dependencies": {
-          "IdentityModel": "3.1.0",
+          "IdentityModel": "3.0.0",
           "Microsoft.AspNetCore.Authentication": "2.0.1",
-          "Microsoft.AspNetCore.Authentication.Cookies": "2.0.1",
-          "Microsoft.AspNetCore.Authentication.OpenIdConnect": "2.0.1",
-          "Microsoft.AspNetCore.Cors": "2.0.1",
-          "Microsoft.Extensions.Caching.Memory": "2.0.0",
-          "Microsoft.Extensions.Logging": "2.0.0",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "2.0.0",
-          "System.IdentityModel.Tokens.Jwt": "5.1.5",
-          "System.Security.Cryptography.Cng": "4.4.0"
+          "Microsoft.AspNetCore.Http.Abstractions": "2.0.1",
+          "Microsoft.Extensions.Caching.Memory": "2.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/IdentityServer4.dll": {}
+          "lib/netstandard2.0/IdentityModel.AspNetCore.OAuth2Introspection.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/IdentityServer4.dll": {}
+          "lib/netstandard2.0/IdentityModel.AspNetCore.OAuth2Introspection.dll": {}
+        }
+      },
+      "IdentityServer4.AccessTokenValidation/2.4.0": {
+        "type": "package",
+        "dependencies": {
+          "IdentityModel.AspNetCore.OAuth2Introspection": "3.1.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "2.0.1",
+          "Microsoft.AspNetCore.Authorization": "2.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/IdentityServer4.AccessTokenValidation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/IdentityServer4.AccessTokenValidation.dll": {}
         }
       },
       "Libuv/1.10.0": {
@@ -2356,7 +2364,7 @@
           "lib/netstandard1.3/Microsoft.IdentityModel.Clients.ActiveDirectory.dll": {}
         }
       },
-      "Microsoft.IdentityModel.Logging/1.1.5": {
+      "Microsoft.IdentityModel.Logging/1.1.4": {
         "type": "package",
         "dependencies": {
           "System.Diagnostics.Tracing": "4.3.0",
@@ -2399,10 +2407,10 @@
           "lib/netstandard1.4/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {}
         }
       },
-      "Microsoft.IdentityModel.Tokens/5.1.5": {
+      "Microsoft.IdentityModel.Tokens/5.1.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Logging": "1.1.5",
+          "Microsoft.IdentityModel.Logging": "1.1.4",
           "Newtonsoft.Json": "9.0.1",
           "System.Collections": "4.3.0",
           "System.Diagnostics.Tools": "4.3.0",
@@ -3483,10 +3491,10 @@
           }
         }
       },
-      "System.IdentityModel.Tokens.Jwt/5.1.5": {
+      "System.IdentityModel.Tokens.Jwt/5.1.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Tokens": "5.1.5"
+          "Microsoft.IdentityModel.Tokens": "5.1.4"
         },
         "compile": {
           "lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.dll": {}
@@ -4186,19 +4194,30 @@
           }
         }
       },
-      "System.Security.Cryptography.Cng/4.4.0": {
+      "System.Security.Cryptography.Cng/4.3.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "2.0.0"
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "System.IO": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Runtime.Handles": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Security.Cryptography.Algorithms": "4.3.0",
+          "System.Security.Cryptography.Encoding": "4.3.0",
+          "System.Security.Cryptography.Primitives": "4.3.0",
+          "System.Text.Encoding": "4.3.0"
         },
         "compile": {
-          "ref/netcoreapp2.0/System.Security.Cryptography.Cng.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Security.Cryptography.Cng.dll": {}
+          "ref/netstandard1.6/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/win/lib/netcoreapp2.0/System.Security.Cryptography.Cng.dll": {
+          "runtimes/unix/lib/netstandard1.6/System.Security.Cryptography.Cng.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netstandard1.6/System.Security.Cryptography.Cng.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -4752,12 +4771,12 @@
     }
   },
   "libraries": {
-    "IdentityModel/3.1.0": {
-      "sha512": "r+mZKYQTL33k8ehcma3tmK0qEqM8OzO/cDZvqEorkmTrsnBccvUyNlfDZ+Ozgw9kR+YJP7J9v4+JBLEBekK0aQ==",
+    "IdentityModel/3.0.0": {
+      "sha512": "EKMOOUUqDzBR3goiA8eWJ1aQBz1AMfKVxxR7XnzAf5qq2k9vr6GT91SyHmzC14KINpNNJOrbmowXf5S04gQ0ZA==",
       "type": "package",
-      "path": "identitymodel/3.1.0",
+      "path": "identitymodel/3.0.0",
       "files": [
-        "identitymodel.3.1.0.nupkg.sha512",
+        "identitymodel.3.0.0.nupkg.sha512",
         "identitymodel.nuspec",
         "lib/net452/IdentityModel.dll",
         "lib/net452/IdentityModel.xml",
@@ -4769,16 +4788,33 @@
         "lib/netstandard2.0/IdentityModel.xml"
       ]
     },
-    "IdentityServer4/2.1.2": {
-      "sha512": "BZHo3z7AJNc4rGtA8RZy6/d/+tSqBe70AZtiLAh2QuSopsr+PLOM0PT2m6KyJ+KwkiGmyqkFzafEWLMcvJCuqQ==",
+    "IdentityModel.AspNetCore.OAuth2Introspection/3.1.0": {
+      "sha512": "x8e2m1JAHpUG+u8fuYtda72ppeqCSux+YIytLLII9eDqm5mK7sofqWzPlXTUQ9bD6qGFZrK+frMyjRfARKTKPQ==",
       "type": "package",
-      "path": "identityserver4/2.1.2",
+      "path": "identitymodel.aspnetcore.oauth2introspection/3.1.0",
       "files": [
-        "identityserver4.2.1.2.nupkg.sha512",
-        "identityserver4.nuspec",
-        "lib/netstandard2.0/IdentityServer4.dll",
-        "lib/netstandard2.0/IdentityServer4.pdb",
-        "lib/netstandard2.0/IdentityServer4.xml"
+        "identitymodel.aspnetcore.oauth2introspection.3.1.0.nupkg.sha512",
+        "identitymodel.aspnetcore.oauth2introspection.nuspec",
+        "lib/net461/IdentityModel.AspNetCore.OAuth2Introspection.dll",
+        "lib/net461/IdentityModel.AspNetCore.OAuth2Introspection.pdb",
+        "lib/netstandard2.0/IdentityModel.AspNetCore.OAuth2Introspection.dll",
+        "lib/netstandard2.0/IdentityModel.AspNetCore.OAuth2Introspection.pdb",
+        "lib/netstandard2.0/IdentityModel.AspNetCore.OAuth2Introspection.xml"
+      ]
+    },
+    "IdentityServer4.AccessTokenValidation/2.4.0": {
+      "sha512": "6zGnz8b5SZsinxa/YBNeC4xb1NTJP0/JUkjynHYo7DoDHt2QDJSnAUgKvi9HROz4/QIsmyrZE3ZFKm3xB063kg==",
+      "type": "package",
+      "path": "identityserver4.accesstokenvalidation/2.4.0",
+      "files": [
+        "identityserver4.accesstokenvalidation.2.4.0.nupkg.sha512",
+        "identityserver4.accesstokenvalidation.nuspec",
+        "lib/net461/IdentityServer4.AccessTokenValidation.dll",
+        "lib/net461/IdentityServer4.AccessTokenValidation.pdb",
+        "lib/net461/IdentityServer4.AccessTokenValidation.xml",
+        "lib/netstandard2.0/IdentityServer4.AccessTokenValidation.dll",
+        "lib/netstandard2.0/IdentityServer4.AccessTokenValidation.pdb",
+        "lib/netstandard2.0/IdentityServer4.AccessTokenValidation.xml"
       ]
     },
     "Libuv/1.10.0": {
@@ -6897,10 +6933,10 @@
         "src/src/ADAL.PCL/Utilities/OAuthConstants.cs"
       ]
     },
-    "Microsoft.IdentityModel.Logging/1.1.5": {
-      "sha512": "cDarc2eVVJUU69FhepWYs/ZmHkwTPnNnSvSct7FMKeHpukVARNdmEQ7wKZB/l3QjMo42ioI0meVZ/ASrEymY6w==",
+    "Microsoft.IdentityModel.Logging/1.1.4": {
+      "sha512": "j7t22EsDOuo0IXqAbp6ijdB1GuaY8cu3YoPNZpymOhUMTVC+wRTV0IHqxL31HacCnJHU/igsqe70fDKZgZu3oA==",
       "type": "package",
-      "path": "microsoft.identitymodel.logging/1.1.5",
+      "path": "microsoft.identitymodel.logging/1.1.4",
       "files": [
         "lib/net45/Microsoft.IdentityModel.Logging.dll",
         "lib/net45/Microsoft.IdentityModel.Logging.xml",
@@ -6908,7 +6944,7 @@
         "lib/net451/Microsoft.IdentityModel.Logging.xml",
         "lib/netstandard1.4/Microsoft.IdentityModel.Logging.dll",
         "lib/netstandard1.4/Microsoft.IdentityModel.Logging.xml",
-        "microsoft.identitymodel.logging.1.1.5.nupkg.sha512",
+        "microsoft.identitymodel.logging.1.1.4.nupkg.sha512",
         "microsoft.identitymodel.logging.nuspec"
       ]
     },
@@ -6942,10 +6978,10 @@
         "microsoft.identitymodel.protocols.openidconnect.nuspec"
       ]
     },
-    "Microsoft.IdentityModel.Tokens/5.1.5": {
-      "sha512": "cYh3lKy/N0X4l1LfqRzjTC7Vq+SYGCv4ZopiTJ3Pglb4CGW8ZI/K8Q6MOz83YHq00lgPuJPVuykPP4Btr5CDXA==",
+    "Microsoft.IdentityModel.Tokens/5.1.4": {
+      "sha512": "SsJbZVPvjSlKFDAQmR2wpL6ZD/vCFlIsf0jxRlBJwyzKXZy3Wi/Xo+fE2MzAerLsJgG1UCdtplRwqDyq1euayw==",
       "type": "package",
-      "path": "microsoft.identitymodel.tokens/5.1.5",
+      "path": "microsoft.identitymodel.tokens/5.1.4",
       "files": [
         "lib/net45/Microsoft.IdentityModel.Tokens.dll",
         "lib/net45/Microsoft.IdentityModel.Tokens.xml",
@@ -6953,7 +6989,7 @@
         "lib/net451/Microsoft.IdentityModel.Tokens.xml",
         "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.dll",
         "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.xml",
-        "microsoft.identitymodel.tokens.5.1.5.nupkg.sha512",
+        "microsoft.identitymodel.tokens.5.1.4.nupkg.sha512",
         "microsoft.identitymodel.tokens.nuspec"
       ]
     },
@@ -9224,10 +9260,10 @@
         "system.globalization.extensions.nuspec"
       ]
     },
-    "System.IdentityModel.Tokens.Jwt/5.1.5": {
-      "sha512": "S3XfQSoC5e9VYcvjyQk0MkWFDGYJQjrHRkRxwTTdoCqbeXs1q61VAYDVeXi9JjGHeDw5eROwARoboL7b9SRb+Q==",
+    "System.IdentityModel.Tokens.Jwt/5.1.4": {
+      "sha512": "hLUU1N99aL9uyxiTraBnCKlpUKsbP/+5ygD7cswspH9/+M7fAAL0hRzt2aA4w7VEQlSSiu8j+xWFk3NRcqhfQQ==",
       "type": "package",
-      "path": "system.identitymodel.tokens.jwt/5.1.5",
+      "path": "system.identitymodel.tokens.jwt/5.1.4",
       "files": [
         "lib/net45/System.IdentityModel.Tokens.Jwt.dll",
         "lib/net45/System.IdentityModel.Tokens.Jwt.xml",
@@ -9235,7 +9271,7 @@
         "lib/net451/System.IdentityModel.Tokens.Jwt.xml",
         "lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.dll",
         "lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.xml",
-        "system.identitymodel.tokens.jwt.5.1.5.nupkg.sha512",
+        "system.identitymodel.tokens.jwt.5.1.4.nupkg.sha512",
         "system.identitymodel.tokens.jwt.nuspec"
       ]
     },
@@ -11193,46 +11229,30 @@
         "system.security.cryptography.algorithms.nuspec"
       ]
     },
-    "System.Security.Cryptography.Cng/4.4.0": {
-      "sha512": "3d/d+7sdNpfYfqJFzuE/o6Pl/reaMbH7rlUMNvtm4+XVYHY32tdFa45yjB3vhb6q0YY+IV8GUuiBPRsBFP3yaw==",
+    "System.Security.Cryptography.Cng/4.3.0": {
+      "sha512": "03idZOqFlsKRL4W+LuCpJ6dBYDUWReug6lZjBa3uJWnk5sPCUXckocevTaUA8iT/MFSrY/2HXkOt753xQ/cf8g==",
       "type": "package",
-      "path": "system.security.cryptography.cng/4.4.0",
+      "path": "system.security.cryptography.cng/4.3.0",
       "files": [
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
         "lib/net46/System.Security.Cryptography.Cng.dll",
         "lib/net461/System.Security.Cryptography.Cng.dll",
-        "lib/net462/System.Security.Cryptography.Cng.dll",
-        "lib/net47/System.Security.Cryptography.Cng.dll",
-        "lib/netstandard1.3/System.Security.Cryptography.Cng.dll",
-        "lib/netstandard1.4/System.Security.Cryptography.Cng.dll",
-        "lib/netstandard1.6/System.Security.Cryptography.Cng.dll",
-        "lib/netstandard2.0/System.Security.Cryptography.Cng.dll",
+        "lib/net463/System.Security.Cryptography.Cng.dll",
         "ref/net46/System.Security.Cryptography.Cng.dll",
         "ref/net461/System.Security.Cryptography.Cng.dll",
-        "ref/net461/System.Security.Cryptography.Cng.xml",
-        "ref/net462/System.Security.Cryptography.Cng.dll",
-        "ref/net462/System.Security.Cryptography.Cng.xml",
-        "ref/net47/System.Security.Cryptography.Cng.dll",
-        "ref/net47/System.Security.Cryptography.Cng.xml",
-        "ref/netcoreapp2.0/System.Security.Cryptography.Cng.dll",
-        "ref/netcoreapp2.0/System.Security.Cryptography.Cng.xml",
+        "ref/net463/System.Security.Cryptography.Cng.dll",
         "ref/netstandard1.3/System.Security.Cryptography.Cng.dll",
         "ref/netstandard1.4/System.Security.Cryptography.Cng.dll",
         "ref/netstandard1.6/System.Security.Cryptography.Cng.dll",
-        "ref/netstandard2.0/System.Security.Cryptography.Cng.dll",
-        "ref/netstandard2.0/System.Security.Cryptography.Cng.xml",
+        "runtimes/unix/lib/netstandard1.6/System.Security.Cryptography.Cng.dll",
         "runtimes/win/lib/net46/System.Security.Cryptography.Cng.dll",
         "runtimes/win/lib/net461/System.Security.Cryptography.Cng.dll",
-        "runtimes/win/lib/net462/System.Security.Cryptography.Cng.dll",
-        "runtimes/win/lib/net47/System.Security.Cryptography.Cng.dll",
-        "runtimes/win/lib/netcoreapp2.0/System.Security.Cryptography.Cng.dll",
+        "runtimes/win/lib/net463/System.Security.Cryptography.Cng.dll",
         "runtimes/win/lib/netstandard1.4/System.Security.Cryptography.Cng.dll",
         "runtimes/win/lib/netstandard1.6/System.Security.Cryptography.Cng.dll",
-        "system.security.cryptography.cng.4.4.0.nupkg.sha512",
-        "system.security.cryptography.cng.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "system.security.cryptography.cng.4.3.0.nupkg.sha512",
+        "system.security.cryptography.cng.nuspec"
       ]
     },
     "System.Security.Cryptography.Csp/4.3.0": {
@@ -12580,7 +12600,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "IdentityServer4 >= 2.1.2",
+      "IdentityServer4.AccessTokenValidation >= 2.4.0",
       "Microsoft.AspNetCore.All >= 2.0.5",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
@@ -12595,11 +12615,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\HeZhipeng_Files\\AspNet_Core_Authorization\\AspNet_Core_Authorization\\AspNet_Core_Authorization.csproj",
-      "projectName": "AspNet_Core_Authorization",
-      "projectPath": "D:\\HeZhipeng_Files\\AspNet_Core_Authorization\\AspNet_Core_Authorization\\AspNet_Core_Authorization.csproj",
+      "projectUniqueName": "D:\\HeZhipeng_Files\\AspNet_Core_Authorization\\AspNet_Core_Api\\AspNet_Core_Api.csproj",
+      "projectName": "AspNet_Core_Api",
+      "projectPath": "D:\\HeZhipeng_Files\\AspNet_Core_Authorization\\AspNet_Core_Api\\AspNet_Core_Api.csproj",
       "packagesPath": "C:\\Users\\zphe\\.nuget\\packages\\",
-      "outputPath": "D:\\HeZhipeng_Files\\AspNet_Core_Authorization\\AspNet_Core_Authorization\\obj\\",
+      "outputPath": "D:\\HeZhipeng_Files\\AspNet_Core_Authorization\\AspNet_Core_Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12630,9 +12650,9 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "IdentityServer4": {
+          "IdentityServer4.AccessTokenValidation": {
             "target": "Package",
-            "version": "[2.1.2, )"
+            "version": "[2.4.0, )"
           },
           "Microsoft.AspNetCore.All": {
             "target": "Package",

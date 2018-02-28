@@ -1,0 +1,8 @@
+D:\HeZhipeng_Files\AspNet_Core_Authorization\AspNet_Core_Api\bin\Debug\netcoreapp2.0\AspNet_Core_Api.deps.json
+D:\HeZhipeng_Files\AspNet_Core_Authorization\AspNet_Core_Api\bin\Debug\netcoreapp2.0\AspNet_Core_Api.runtimeconfig.json
+D:\HeZhipeng_Files\AspNet_Core_Authorization\AspNet_Core_Api\bin\Debug\netcoreapp2.0\AspNet_Core_Api.runtimeconfig.dev.json
+D:\HeZhipeng_Files\AspNet_Core_Authorization\AspNet_Core_Api\bin\Debug\netcoreapp2.0\AspNet_Core_Api.dll
+D:\HeZhipeng_Files\AspNet_Core_Authorization\AspNet_Core_Api\obj\Debug\netcoreapp2.0\AspNet_Core_Api.csprojResolveAssemblyReference.cache
+D:\HeZhipeng_Files\AspNet_Core_Authorization\AspNet_Core_Api\obj\Debug\netcoreapp2.0\AspNet_Core_Api.csproj.CoreCompileInputs.cache
+D:\HeZhipeng_Files\AspNet_Core_Authorization\AspNet_Core_Api\obj\Debug\netcoreapp2.0\AspNet_Core_Api.AssemblyInfoInputs.cache
+D:\HeZhipeng_Files\AspNet_Core_Authorization\AspNet_Core_Api\obj\Debug\netcoreapp2.0\AspNet_Core_Api.AssemblyInfo.cs
