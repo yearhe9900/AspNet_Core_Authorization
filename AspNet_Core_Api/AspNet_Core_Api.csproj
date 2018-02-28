@@ -9,15 +9,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Dapper" Version="1.50.4" />
     <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="2.4.0" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
-    <PackageReference Include="NETStandard.Library" Version="2.0.1" />
-    <PackageReference Include="SapientGuardian.MySql.Data" Version="6.9.816" />
   </ItemGroup>
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Asp_Net_Core_Framwork\Asp_Net_Core_Framwork.csproj" />
   </ItemGroup>
 
 </Project>

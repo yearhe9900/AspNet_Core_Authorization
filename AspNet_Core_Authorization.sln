@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNet_Core_Authorization",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNet_Core_Api", "AspNet_Core_Api\AspNet_Core_Api.csproj", "{E71A7F74-5A09-4907-9D0C-96907099DB16}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp_Net_Core_Framwork", "Asp_Net_Core_Framwork\Asp_Net_Core_Framwork.csproj", "{9B27CC2D-5E00-4034-A02C-3D267FE06DF6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E71A7F74-5A09-4907-9D0C-96907099DB16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E71A7F74-5A09-4907-9D0C-96907099DB16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E71A7F74-5A09-4907-9D0C-96907099DB16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B27CC2D-5E00-4034-A02C-3D267FE06DF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B27CC2D-5E00-4034-A02C-3D267FE06DF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B27CC2D-5E00-4034-A02C-3D267FE06DF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B27CC2D-5E00-4034-A02C-3D267FE06DF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
