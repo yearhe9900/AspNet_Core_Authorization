@@ -21,7 +21,7 @@ namespace AspNet_Core_Authorization
         {
             return new List<Client>
                {
-                   // other clients omitted...
+                   // 可在此处添加其他模式
 
                    // 使用密码模式
                    new Client
