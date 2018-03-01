@@ -6,3 +6,8 @@ D:\HeZhipeng_Files\AspNet_Core_Authorization\AspNet_Core_Api\obj\Debug\netcoreap
 D:\HeZhipeng_Files\AspNet_Core_Authorization\AspNet_Core_Api\obj\Debug\netcoreapp2.0\AspNet_Core_Api.csproj.CoreCompileInputs.cache
 D:\HeZhipeng_Files\AspNet_Core_Authorization\AspNet_Core_Api\obj\Debug\netcoreapp2.0\AspNet_Core_Api.AssemblyInfoInputs.cache
 D:\HeZhipeng_Files\AspNet_Core_Authorization\AspNet_Core_Api\obj\Debug\netcoreapp2.0\AspNet_Core_Api.AssemblyInfo.cs
+D:\HeZhipeng_Files\AspNet_Core_Authorization\AspNet_Core_Api\bin\Debug\netcoreapp2.0\AspNet_Core_Api.pdb
+D:\HeZhipeng_Files\AspNet_Core_Authorization\AspNet_Core_Api\bin\Debug\netcoreapp2.0\Asp_Net_Core_Framwork.dll
+D:\HeZhipeng_Files\AspNet_Core_Authorization\AspNet_Core_Api\bin\Debug\netcoreapp2.0\Asp_Net_Core_Framwork.pdb
+D:\HeZhipeng_Files\AspNet_Core_Authorization\AspNet_Core_Api\obj\Debug\netcoreapp2.0\AspNet_Core_Api.dll
+D:\HeZhipeng_Files\AspNet_Core_Authorization\AspNet_Core_Api\obj\Debug\netcoreapp2.0\AspNet_Core_Api.pdb

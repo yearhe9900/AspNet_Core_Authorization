@@ -14,6 +14,9 @@ namespace AspNet_Core_Authorization
             return new List<ApiResource>
             {
                 new ApiResource("api1", "My API")
+                {
+                    UserClaims=new List<string>{"userID"}//添加userID
+                }
             };
         }
 
@@ -33,7 +36,7 @@ namespace AspNet_Core_Authorization
                        {
                            new Secret("secret".Sha256())
                        },
-                       AllowedScopes = { "api1" }
+                       AllowedScopes ={ "api1" }
                    }
             };
         }

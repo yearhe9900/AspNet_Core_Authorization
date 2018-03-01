@@ -26,7 +26,7 @@ namespace AspNet_Core_Api
                 .AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
                 .AddIdentityServerAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme, (option) =>
                 {
-                    option.Authority = "http://localhost:5000";//identityserver4地址
+                    option.Authority = "http://localhost:57345";//identityserver4地址
                     option.RequireHttpsMetadata = false;//使用https
                     option.ApiName = "api1";//api scope
                 });
