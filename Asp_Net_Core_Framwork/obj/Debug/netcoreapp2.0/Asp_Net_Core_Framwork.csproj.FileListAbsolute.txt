@@ -4,3 +4,6 @@ D:\HeZhipeng_Files\AspNet_Core_Authorization\Asp_Net_Core_Framwork\obj\Debug\net
 D:\HeZhipeng_Files\AspNet_Core_Authorization\Asp_Net_Core_Framwork\obj\Debug\netcoreapp2.0\Asp_Net_Core_Framwork.csproj.CoreCompileInputs.cache
 D:\HeZhipeng_Files\AspNet_Core_Authorization\Asp_Net_Core_Framwork\obj\Debug\netcoreapp2.0\Asp_Net_Core_Framwork.AssemblyInfoInputs.cache
 D:\HeZhipeng_Files\AspNet_Core_Authorization\Asp_Net_Core_Framwork\obj\Debug\netcoreapp2.0\Asp_Net_Core_Framwork.AssemblyInfo.cs
+D:\HeZhipeng_Files\AspNet_Core_Authorization\Asp_Net_Core_Framwork\bin\Debug\netcoreapp2.0\Asp_Net_Core_Framwork.pdb
+D:\HeZhipeng_Files\AspNet_Core_Authorization\Asp_Net_Core_Framwork\obj\Debug\netcoreapp2.0\Asp_Net_Core_Framwork.dll
+D:\HeZhipeng_Files\AspNet_Core_Authorization\Asp_Net_Core_Framwork\obj\Debug\netcoreapp2.0\Asp_Net_Core_Framwork.pdb

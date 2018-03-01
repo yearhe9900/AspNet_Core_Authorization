@@ -2039,6 +2039,27 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
+      },
+      "Asp_Net_Core_Framwork/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Dapper": "1.50.4",
+          "Microsoft.Extensions.Configuration": "2.0.0",
+          "Microsoft.Extensions.Configuration.Json": "2.0.0",
+          "NETStandard.Library": "2.0.1",
+          "SapientGuardian.MySql.Data": "6.9.816",
+          "StackExchange.Redis": "1.2.6",
+          "System.Collections": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Threading": "4.3.0"
+        },
+        "compile": {
+          "bin/placeholder/Asp_Net_Core_Framwork.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Asp_Net_Core_Framwork.dll": {}
+        }
       }
     }
   },
@@ -6781,20 +6802,17 @@
         "system.xml.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xmldocument.nuspec"
       ]
+    },
+    "Asp_Net_Core_Framwork/1.0.0": {
+      "type": "project",
+      "path": "../Asp_Net_Core_Framwork/Asp_Net_Core_Framwork.csproj",
+      "msbuildProject": "../Asp_Net_Core_Framwork/Asp_Net_Core_Framwork.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "Dapper >= 1.50.4",
-      "Microsoft.Extensions.Configuration >= 2.0.0",
-      "Microsoft.Extensions.Configuration.Json >= 2.0.0",
-      "Microsoft.NETCore.App >= 2.0.0",
-      "NETStandard.Library >= 2.0.1",
-      "SapientGuardian.MySql.Data >= 6.9.816",
-      "StackExchange.Redis >= 1.2.6",
-      "System.Collections >= 4.3.0",
-      "System.Runtime.InteropServices >= 4.3.0",
-      "System.Threading >= 4.3.0"
+      "Asp_Net_Core_Framwork >= 1.0.0",
+      "Microsoft.NETCore.App >= 2.0.0"
     ]
   },
   "packageFolders": {
@@ -6807,11 +6825,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\HeZhipeng_Files\\AspNet_Core_Authorization\\Asp_Net_Core_Framwork\\Asp_Net_Core_Framwork.csproj",
-      "projectName": "Asp_Net_Core_Framwork",
-      "projectPath": "D:\\HeZhipeng_Files\\AspNet_Core_Authorization\\Asp_Net_Core_Framwork\\Asp_Net_Core_Framwork.csproj",
+      "projectUniqueName": "D:\\HeZhipeng_Files\\AspNet_Core_Authorization\\Console_Core_Test\\Console_Core_Test.csproj",
+      "projectName": "Console_Core_Test",
+      "projectPath": "D:\\HeZhipeng_Files\\AspNet_Core_Authorization\\Console_Core_Test\\Console_Core_Test.csproj",
       "packagesPath": "C:\\Users\\zphe\\.nuget\\packages\\",
-      "outputPath": "D:\\HeZhipeng_Files\\AspNet_Core_Authorization\\Asp_Net_Core_Framwork\\obj\\",
+      "outputPath": "D:\\HeZhipeng_Files\\AspNet_Core_Authorization\\Console_Core_Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6830,7 +6848,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\HeZhipeng_Files\\AspNet_Core_Authorization\\Asp_Net_Core_Framwork\\Asp_Net_Core_Framwork.csproj": {
+              "projectPath": "D:\\HeZhipeng_Files\\AspNet_Core_Authorization\\Asp_Net_Core_Framwork\\Asp_Net_Core_Framwork.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -6842,47 +6864,10 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Dapper": {
-            "target": "Package",
-            "version": "[1.50.4, )"
-          },
-          "Microsoft.Extensions.Configuration": {
-            "target": "Package",
-            "version": "[2.0.0, )"
-          },
-          "Microsoft.Extensions.Configuration.Json": {
-            "target": "Package",
-            "version": "[2.0.0, )"
-          },
           "Microsoft.NETCore.App": {
-            "suppressParent": "All",
             "target": "Package",
             "version": "[2.0.0, )",
             "autoReferenced": true
-          },
-          "NETStandard.Library": {
-            "target": "Package",
-            "version": "[2.0.1, )"
-          },
-          "SapientGuardian.MySql.Data": {
-            "target": "Package",
-            "version": "[6.9.816, )"
-          },
-          "StackExchange.Redis": {
-            "target": "Package",
-            "version": "[1.2.6, )"
-          },
-          "System.Collections": {
-            "target": "Package",
-            "version": "[4.3.0, )"
-          },
-          "System.Runtime.InteropServices": {
-            "target": "Package",
-            "version": "[4.3.0, )"
-          },
-          "System.Threading": {
-            "target": "Package",
-            "version": "[4.3.0, )"
           }
         },
         "imports": [

@@ -6,20 +6,12 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.0": {
-      "Asp_Net_Core_Framwork/1.0.0": {
+      "Console_Core_Test/1.0.0": {
         "dependencies": {
-          "Dapper": "1.50.4",
-          "Microsoft.Extensions.Configuration": "2.0.0",
-          "Microsoft.Extensions.Configuration.Json": "2.0.0",
-          "NETStandard.Library": "2.0.1",
-          "SapientGuardian.MySql.Data": "6.9.816",
-          "StackExchange.Redis": "1.2.6",
-          "System.Collections": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Threading": "4.3.0"
+          "Asp_Net_Core_Framwork": "1.0.0"
         },
         "runtime": {
-          "Asp_Net_Core_Framwork.dll": {}
+          "Console_Core_Test.dll": {}
         }
       },
       "Dapper/1.50.4": {
@@ -1280,11 +1272,27 @@
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
         }
+      },
+      "Asp_Net_Core_Framwork/1.0.0": {
+        "dependencies": {
+          "Dapper": "1.50.4",
+          "Microsoft.Extensions.Configuration": "2.0.0",
+          "Microsoft.Extensions.Configuration.Json": "2.0.0",
+          "NETStandard.Library": "2.0.1",
+          "SapientGuardian.MySql.Data": "6.9.816",
+          "StackExchange.Redis": "1.2.6",
+          "System.Collections": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Threading": "4.3.0"
+        },
+        "runtime": {
+          "Asp_Net_Core_Framwork.dll": {}
+        }
       }
     }
   },
   "libraries": {
-    "Asp_Net_Core_Framwork/1.0.0": {
+    "Console_Core_Test/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -2072,6 +2080,11 @@
       "sha512": "sha512-lJ8AxvkX7GQxpC6GFCeBj8ThYVyQczx2+f/cWHJU8tjS7YfI6Cv6bon70jVEgs2CiFbmmM8b9j1oZVx0dSI2Ww==",
       "path": "system.xml.xmldocument/4.3.0",
       "hashPath": "system.xml.xmldocument.4.3.0.nupkg.sha512"
+    },
+    "Asp_Net_Core_Framwork/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

@@ -4924,6 +4924,8 @@
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
           "Dapper": "1.50.4",
+          "Microsoft.Extensions.Configuration": "2.0.0",
+          "Microsoft.Extensions.Configuration.Json": "2.0.0",
           "NETStandard.Library": "2.0.1",
           "SapientGuardian.MySql.Data": "6.9.816",
           "StackExchange.Redis": "1.2.6",
