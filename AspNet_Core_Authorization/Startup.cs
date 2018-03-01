@@ -24,8 +24,6 @@ namespace AspNet_Core_Authorization
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton(Configuration);
-
             // 使用内存存储，密钥，客户端和资源来配置身份服务器。
             services.AddIdentityServer()//注册IdentitiyServer到DI中。
                 .AddDeveloperSigningCredential()//扩展在每次启动时，为令牌签名创建了一个临时密钥。在生成环境需要一个持久化的密钥。

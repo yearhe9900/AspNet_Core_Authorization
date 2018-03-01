@@ -9,3 +9,5 @@ D:\HeZhipeng_Files\AspNet_Core_Authorization\AspNet_Core_Authorization\obj\Debug
 D:\HeZhipeng_Files\AspNet_Core_Authorization\AspNet_Core_Authorization\bin\Debug\netcoreapp2.0\AspNet_Core_Authorization.pdb
 D:\HeZhipeng_Files\AspNet_Core_Authorization\AspNet_Core_Authorization\obj\Debug\netcoreapp2.0\AspNet_Core_Authorization.dll
 D:\HeZhipeng_Files\AspNet_Core_Authorization\AspNet_Core_Authorization\obj\Debug\netcoreapp2.0\AspNet_Core_Authorization.pdb
+D:\HeZhipeng_Files\AspNet_Core_Authorization\AspNet_Core_Authorization\bin\Debug\netcoreapp2.0\Asp_Net_Core_Framwork.dll
+D:\HeZhipeng_Files\AspNet_Core_Authorization\AspNet_Core_Authorization\bin\Debug\netcoreapp2.0\Asp_Net_Core_Framwork.pdb

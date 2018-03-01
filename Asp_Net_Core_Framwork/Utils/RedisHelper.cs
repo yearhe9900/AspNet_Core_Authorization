@@ -11,7 +11,7 @@ namespace Asp_Net_Core_Framwork.Utils
     public class RedisHelper
     {
         private IDatabase _redisDatabase;
-        public RedisHelper(string databaseName)
+        public RedisHelper(string databaseName="Redis_Default")
         {
             var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json");
             IConfigurationRoot configuration = builder.Build();
