@@ -1,8 +1,4 @@
-﻿using Asp_Net_Core_Framwork.Framwork;
-using Asp_Net_Core_Framwork.Utils;
-using Microsoft.Extensions.Configuration;
-using System;
-using System.IO;
+﻿using Asp_Net_Core_Framwork.Utils;
 
 namespace Console_Core_Test
 {

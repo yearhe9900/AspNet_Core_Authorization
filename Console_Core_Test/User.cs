@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Console_Core_Test
+﻿namespace Console_Core_Test
 {
     public class User
     {

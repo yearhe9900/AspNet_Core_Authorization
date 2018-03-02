@@ -1,4 +1,0 @@
-D:\HeZhipeng_Files\AspNet_Core_Authorization\AspNet_Core_Authorization\bin\Debug\netcoreapp2.0\Asp_Net_Core_Framwork.dll
-D:\HeZhipeng_Files\AspNet_Core_Authorization\AspNet_Core_Authorization\bin\Debug\netcoreapp2.0\AspNet_Core_Authorization.dll
-D:\HeZhipeng_Files\AspNet_Core_Authorization\AspNet_Core_Authorization\bin\Debug\netcoreapp2.0\Asp_Net_Core_Core.dll
-D:\HeZhipeng_Files\AspNet_Core_Authorization\AspNet_Core_Authorization\bin\Debug\netcoreapp2.0\Asp_Net_Core_Service.dll

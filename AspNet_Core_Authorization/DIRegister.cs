@@ -1,9 +1,5 @@
 ﻿using Asp_Net_Core_Service.Authorization.UserInfo;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace AspNet_Core_Authorization
 {

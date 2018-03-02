@@ -1,10 +1,6 @@
 ﻿using Asp_Net_Core_Framwork.Framwork;
-using Microsoft.Extensions.Configuration;
 using StackExchange.Redis;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
 
 namespace Asp_Net_Core_Framwork.Utils
 {
