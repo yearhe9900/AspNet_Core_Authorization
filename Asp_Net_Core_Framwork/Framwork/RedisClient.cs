@@ -80,21 +80,6 @@ namespace Asp_Net_Core_Framwork.Framwork
             return GetConnect(redisConfig).GetDatabase(defaultDb);
         }
 
-        public IServer GetServer(string configName = null, int endPointsIndex = 0)
-        {
-            IConfigurationSection redisConfig = CheckeConfig(configName);
-            var connStr = redisConfig["Connection"];
-
-            var confOption = ConfigurationOptions.Parse((string)connStr);
-            return GetConnect(redisConfig).GetServer(confOption.EndPoints[endPointsIndex]);
-        }
-
-        public ISubscriber GetSubscriber(string configName = null)
-        {
-            IConfigurationSection redisConfig = CheckeConfig(configName);
-            return GetConnect(redisConfig).GetSubscriber();
-        }
-
         public void Dispose()
         {
             if (_connections != null && _connections.Count > 0)
