@@ -13,12 +13,7 @@ namespace Asp_Net_Core_Framwork.Utils
         private IDatabase _redisDatabase;
         public RedisHelper(string databaseName="Redis_Default")
         {
-            var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json");
-            IConfigurationRoot configuration = builder.Build();
-
-            var redisClient = RedisClientSingleton.GetInstance(configuration);
-
-            _redisDatabase = redisClient.GetDatabase(databaseName);
+            _redisDatabase = InitializeConfig.GetRedisClient().GetDatabase(databaseName);
         }
 
         public bool StringSet(RedisKey key, RedisValue value, TimeSpan? expiry = null, When when = When.Always, CommandFlags flags = CommandFlags.None)

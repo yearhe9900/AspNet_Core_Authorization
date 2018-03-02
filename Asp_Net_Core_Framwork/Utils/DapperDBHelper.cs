@@ -1,4 +1,5 @@
-﻿using Dapper;
+﻿using Asp_Net_Core_Framwork.Framwork;
+using Dapper;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -10,9 +11,9 @@ namespace Asp_Net_Core_Framwork.Utils
     public class DapperDBHelper
     {
         private string _connection;
-        public DapperDBHelper(string connection)
+        public DapperDBHelper()
         {
-            _connection = connection;
+            _connection = InitializeConfig.GetDapperClient().GetConnectionStr();
         }
 
         #region ExcuteNonQuery 增、删、改同步操作
