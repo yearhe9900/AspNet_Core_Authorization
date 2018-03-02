@@ -20,14 +20,21 @@ namespace AspNet_Core_Authorization
             _userInfoService = userInfoService;
         }
 
+        /// <summary>
+        /// 自定义登录验证
+        /// </summary>
+        /// <param name="context"></param>
+        /// <returns></returns>
         public Task ValidateAsync(ResourceOwnerPasswordValidationContext context)
         {
+            //创建查询参数
             DynamicParameters pars = new DynamicParameters();
             pars.Add("loginname", context.UserName);
             pars.Add("password", context.Password);
             var userInfo = _userInfoService.Login(pars);
             if (userInfo != null)
             {
+                //新增写入token中的内容
                 IEnumerable<Claim> claims = new List<Claim>
                 {
                     new Claim("userID",userInfo.UserID)
