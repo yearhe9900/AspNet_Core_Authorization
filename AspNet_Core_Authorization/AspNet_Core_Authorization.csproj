@@ -27,7 +27,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Asp_Net_Core_Core\Asp_Net_Core_Core.csproj" />
     <ProjectReference Include="..\Asp_Net_Core_Framwork\Asp_Net_Core_Framwork.csproj" />
+    <ProjectReference Include="..\Asp_Net_Core_Service\Asp_Net_Core_Service.csproj" />
   </ItemGroup>
 
 </Project>

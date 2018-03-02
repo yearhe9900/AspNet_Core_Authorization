@@ -32,6 +32,9 @@ namespace AspNet_Core_Api
                 });
 
             #endregion
+
+            DIRegister di = new DIRegister();
+            di.AddTransient(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Api\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Asp_Net_Core_Core\Asp_Net_Core_Core.csproj" />
+    <ProjectReference Include="..\Asp_Net_Core_Framwork\Asp_Net_Core_Framwork.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -4919,6 +4919,16 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
+      "Asp_Net_Core_Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Asp_Net_Core_Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Asp_Net_Core_Core.dll": {}
+        }
+      },
       "Asp_Net_Core_Framwork/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
@@ -4938,6 +4948,20 @@
         },
         "runtime": {
           "bin/placeholder/Asp_Net_Core_Framwork.dll": {}
+        }
+      },
+      "Asp_Net_Core_Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Asp_Net_Core_Core": "1.0.0",
+          "Asp_Net_Core_Framwork": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Asp_Net_Core_Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Asp_Net_Core_Service.dll": {}
         }
       }
     }
@@ -12919,15 +12943,27 @@
         "windowsazure.storage.nuspec"
       ]
     },
+    "Asp_Net_Core_Core/1.0.0": {
+      "type": "project",
+      "path": "../Asp_Net_Core_Core/Asp_Net_Core_Core.csproj",
+      "msbuildProject": "../Asp_Net_Core_Core/Asp_Net_Core_Core.csproj"
+    },
     "Asp_Net_Core_Framwork/1.0.0": {
       "type": "project",
       "path": "../Asp_Net_Core_Framwork/Asp_Net_Core_Framwork.csproj",
       "msbuildProject": "../Asp_Net_Core_Framwork/Asp_Net_Core_Framwork.csproj"
+    },
+    "Asp_Net_Core_Service/1.0.0": {
+      "type": "project",
+      "path": "../Asp_Net_Core_Service/Asp_Net_Core_Service.csproj",
+      "msbuildProject": "../Asp_Net_Core_Service/Asp_Net_Core_Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "Asp_Net_Core_Core >= 1.0.0",
       "Asp_Net_Core_Framwork >= 1.0.0",
+      "Asp_Net_Core_Service >= 1.0.0",
       "IdentityServer4.AccessTokenValidation >= 2.4.0",
       "Microsoft.AspNetCore.All >= 2.0.5",
       "Microsoft.NETCore.App >= 2.0.0"
@@ -12967,6 +13003,12 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
+            "D:\\HeZhipeng_Files\\AspNet_Core_Authorization\\Asp_Net_Core_Service\\Asp_Net_Core_Service.csproj": {
+              "projectPath": "D:\\HeZhipeng_Files\\AspNet_Core_Authorization\\Asp_Net_Core_Service\\Asp_Net_Core_Service.csproj"
+            },
+            "D:\\HeZhipeng_Files\\AspNet_Core_Authorization\\Asp_Net_Core_Core\\Asp_Net_Core_Core.csproj": {
+              "projectPath": "D:\\HeZhipeng_Files\\AspNet_Core_Authorization\\Asp_Net_Core_Core\\Asp_Net_Core_Core.csproj"
+            },
             "D:\\HeZhipeng_Files\\AspNet_Core_Authorization\\Asp_Net_Core_Framwork\\Asp_Net_Core_Framwork.csproj": {
               "projectPath": "D:\\HeZhipeng_Files\\AspNet_Core_Authorization\\Asp_Net_Core_Framwork\\Asp_Net_Core_Framwork.csproj"
             }

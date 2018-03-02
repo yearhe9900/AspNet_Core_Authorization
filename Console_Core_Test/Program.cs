@@ -14,11 +14,6 @@ namespace Console_Core_Test
             RedisHelper redisHelper = new RedisHelper("Redis_1");
             redisHelper.StringSet("test", "123");
 
-            string sqlStr = "select * from user";
-
-            DapperDBHelper dapperDBHelper = new DapperDBHelper();
-
-            var a = dapperDBHelper.FindOne<User>(sqlStr);
         }
     }
 }

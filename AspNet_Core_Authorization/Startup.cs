@@ -30,6 +30,9 @@ namespace AspNet_Core_Authorization
                 .AddInMemoryApiResources(Config.GetApiResources())//添加api资源
                 .AddInMemoryClients(Config.GetClients())//添加客户端
                 .AddResourceOwnerValidator<UserValidator>();//添加自定义用户验证
+
+            DIRegister di = new DIRegister();
+            di.AddTransient(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
