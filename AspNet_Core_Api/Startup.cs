@@ -18,6 +18,17 @@ namespace AspNet_Core_Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("any", builder =>
+                {
+                    builder.AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowAnyOrigin()
+                    .AllowCredentials();
+                });
+            });
+
             services.AddMvcCore().AddJsonFormatters();
 
             #region use IdentityServer4.AccessTokenValidation
@@ -50,6 +61,9 @@ namespace AspNet_Core_Api
 
                 return next.Invoke();
             });
+
+            app.UseCors("any");
+
             app.UseMvc();
         }
     }
